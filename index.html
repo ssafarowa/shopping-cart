@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/application.js"></script>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/custom.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">Shopping Cart</h1>
+			<div class="row">
+				<div class="col-12 col-md-8">
+					<table class="table table-responsive">
+						<thead>
+							<tr>
+								<th class="col-md-4">Item</th>
+								<th class="col-md-1">Price</th>
+								<th class="col-md-1">Quantity</th>
+								<th class="col-md-2">Subtotal</th>
+								<th class="col-md-2">Delete Item</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="item">Salmon</td>
+								<td class="price"><input type="number" value="0" /></td>
+								<td class="qty"><input type="number" value="0" /></td>
+								<td class="subtotal"></td>
+								<td>
+									<button class="btn btn-blue btn-sm remove">Remove</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="item">Broccoli</td>
+								<td class="price"><input type="number" value="0" /></td>
+								<td class="qty"><input type="number" value="0" /></td>
+								<td class="subtotal"></td>
+								<td>
+									<button class="btn btn-blue btn-sm remove">Remove</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="item">Apples</td>
+								<td class="price"><input type="number" value="0" /></td>
+								<td class="qty"><input type="number" value="0" /></td>
+								<td class="subtotal"></td>
+								<td>
+									<button class="btn btn-blue btn-sm remove">Remove</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="item">Oranges</td>
+								<td class="price"><input type="number" value="0" /></td>
+								<td class="qty"><input type="number" value="0" /></td>
+								<td class="subtotal"></td>
+								<td>
+									<button class="btn btn-blue btn-sm remove">Remove</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<form class="col-12 col-md-8 mt-2 mb-4" id="addItem">
+					<input
+						class="mx-2"
+						name="Item"
+						type="text"
+						placeholder="Item"
+						required
+					/>
+					<input class="mx-2" name="Price" type="number" placeholder="Price" />
+					<input class="mx-2" name="Qty" type="number" placeholder="Quantity" />
+					<button class="btn btn-blue btn-sm">Add</button>
+				</form>
+				<div class="col-12 col-md-6">
+					<h3 class="total">
+						Total Price: $ <span id="portfolioValue"></span>
+					</h3>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
