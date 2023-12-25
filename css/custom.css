@@ -28,3 +28,36 @@ form {
 	background-color: #0d3b4c;
 	color: white;
 }
+
+.subtotal {
+	font-weight: bold;
+}
+
+input {
+	width: 60px;
+}
+
+@media (min-width: 576px) {
+	.table-responsive {
+		border: none;
+	}
+	.container {
+		width: 500px;
+		margin-bottom: 30px;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		width: 700px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 850px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1100px;
+	}
+}
